@@ -1,0 +1,59 @@
+#buttons {
+  text-align: center;
+}
+
+button {
+  border: 1px solid white;
+  color: white;
+  border-radius: 50px;
+  padding: 11px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 5vw 5vh;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  line-height: 10px;
+}
+
+body.answer_yes .btn_yes,
+.btn_yes:hover {
+  background-color: #ffffff;
+  color: black;
+}
+
+body.answer_no .btn_no,
+.btn_no:hover {
+  background-color: #ffffff;
+  color: black;
+}
+
+#start-count{
+  color: black;
+  font-family: Helvetica, sans-serif;
+  border: 1px solid black;
+  border-radius:10px;
+  padding: 12px; 
+  margin:5px;
+  
+}
+
+#start-count:hover{
+    background-color: #000000;
+    color: white;
+}
+
+.strava{
+  border: 2px none #FFFFFF;
+  border-radius: 50px;
+  color: white;
+  font-family: helvetica, sans-serif;
+  font-size: 1.2vw;
+  margin:15vh 80vw;
+  
+}
+.strava:hover{
+  background-color: #FFFFFF;
+  color: black;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="buttons.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="comments.css" />
+    <style>
+      p {
+        text-align: center;
+        font-size: 60px;
+        margin-top: 50px;
+      }
+    </style>
+    <script src="script.js" defer></script>
+  </head>
+  <body onload="checkEdits()" >
+
+    <h1 class="title">marathon.countdown</h1>
+    <p class="title2">Are you ready for it?</p>
+
+    <div id="buttons">
+      <button class="btn_yes" onclick="answerYes()">YES</button>
+      <button class="btn_no" onclick="answerNo()">NO</button>
+    </div>
+
+    <div class="comments">
+      <p class="comment_yes">Good for you!</p>
+      <p class="comment_no">You better run then!</p>
+    </div>
+
+    <div class="countdown">
+      <input
+        type="text"
+        placeholder="2022-01-01 00:00:00"
+        id="endtime" 
+        value=""
+      />
+      <button class="btn" id="start-count">Start</button>
+
+      <div class="countdown-content">
+        <span id="day"></span> Days 
+        <span id="hour"></span> Hours
+        <span id="minute"></span> Minutes 
+        <span id="second"></span> Seconds
+      </div>
+    </div>
+
+      
+    <button
+      class="strava"
+      onclick="window.location.href='https://www.strava.com';" >
+      connect.strava
+    </button>
+
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <footer>This is a footer. This stays at the bottom of the page.</footer>
+  </body>
+</html>
